@@ -1,0 +1,6 @@
+@Caravan_webpage_HostAddress = http://localhost:5006
+
+GET {{Caravan_webpage_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
