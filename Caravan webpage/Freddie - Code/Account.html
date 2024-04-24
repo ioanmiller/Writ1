@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Account</title>
         <link rel="stylesheet" href="Nav.css">
-        <link rel="stylesheet" href="Accountcontent.css">
+        <link rel="stylesheet" href="AccountStyle.css">
         <link rel="icon" type="image/x-icon" href="logo.png">
     </head>
     <body>
@@ -25,7 +25,7 @@
                     <li><a href="#">Frequented Questions</a></li>
                 </ul>
             </li>
-            <li><a href="Account.html">Your Account</a></li>
+            <li><a href="Account.php">Your Account</a></li>
         </ul>
 
 
@@ -37,59 +37,72 @@
                 </tr>
                 <tr>
                     <td>User ID</td>
-                    <td></td>
+                    <td><?php echo $row['user_id']; ?></td>
                 </tr>
                 <tr>
                     <td>Username</td>
-                    <td></td>
+                    <td><?php echo $row['username']; ?></td>
                 </tr>
                 <tr>
                     <td>Password</td>
-                    <td></td>
+                    <td><?php echo $row['password']; ?></td>
                 </tr>
                 <tr>
                     <td>Title</td>
-                    <td></td>
+                    <td><?php echo $row['title']; ?></td>
                 </tr>
                 <tr>
                     <td>Firstname</td>
-                    <td></td>
+                    <td><?php echo $row['first_name']; ?></td>
                 </tr>
                 <tr>
                     <td>Lastname</td>
-                    <td></td>
+                    <td><?php echo $row['last_name']; ?></td>
                 </tr>
                 <tr>
                     <td>Gender</td>
-                    <td></td>
+                    <td><?php echo $row['gender']; ?></td>
                 </tr>
                 <tr>
                     <td>Postcode</td>
-                    <td></td>
+                    <td><?php echo $row['postcode']; ?></td>
                 </tr>
                 <tr>
                     <td>Email</td>
-                    <td></td>
+                    <td><?php echo $row['email']; ?></td>
                 </tr>
                 <tr>
                     <td>Telephone</td>
-                    <td></td>
+                    <td><?php echo $row['telephone']; ?></td>
                 </tr>
               </table>
         </div>
 
         <div class="containerRight">
-            <p>Your Caravans Here:</p>
+            <table>
+                <tr>
+                    <th>Vehicle ID</th>
+                    <th>Vehicle Make</th>
+                    <th>Vehicle Model</th>
+                    <th>Photo</th>
+                </tr>
+                <?php
+                while ($vehicle_row = mysqli_fetch_assoc($result_vehicles)) {
+                    echo "<tr>";
+                    echo "<td>" . "<a href='view_caravan_details.php?vehicle_id=" . $vehicle_row['vehicle_id'] . "'>" . $vehicle_row['vehicle_id'] . "</a>" . "</td>";
+                    echo "<td>" . $vehicle_row['vehicle_make'] . "</td>";
+                    echo "<td>" . $vehicle_row['vehicle_model'] . "</td>";
+                    echo "<td>" . $vehicle_row['photo_url'] . "</td>";
+                    echo "</tr>";
+                }
+                ?>
+            </table>
         </div>
+
         <div class="btn-container">
-            <button onclick="window. open('AddCaravan.html')">Add Caravan</button>
+            <button onclick="window. open('AddCaravan.php')">Add Caravan</button>
         </div>  
         <button class="add-btn">Log out</button>
        
     </body>
-
-    <footer>
-        
-
-    </footer>
 </html>
