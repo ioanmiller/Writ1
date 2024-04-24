@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Manage Caravan</title>
+        <link rel="stylesheet" href="Nav.css">
+        <link rel="stylesheet" href="AccountContent.css">
+        <link rel="icon" type="image/x-icon" href="logo.png">
+    </head>
+    <body>
+ 
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">Caravans ↓</a>
+                <ul class="DropDownBarCara">
+                    <li><a href="#">View Caravans</a></li>
+                    <li><a href="#">Buy/Rent Caravans</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">About us ↓</a>
+                <ul class="DropDownBarAbt">
+                    <li><a href="#">Our history</a></li>
+                    <li><a href="#">Frequented Questions</a></li>
+                </ul>
+            </li>
+            <li><a href="Account.html">Your Account</a></li>
+        </ul>
+
+        <div class="mngContainerLeft">
+            <p>Current caravan details:</p>
+        </div>
+        <div class="mngContainerRight">
+            <p>Enter new caravan details:</p><br><br>
+            <form action="/action_page.php">
+                <label for="fname">Name of Caravan:</label>
+                <input type="text" id="cname" name="cname"><br><br>
+                <label for="lname">Caravan Model:</label>
+                <input type="text" id="cmodel" name="cmodel"><br><br>
+                <label for="fname">Year of Model:</label>
+                <input type="text" id="cyear" name="cyear"><br><br>
+                <label for="lname">Links for videos or Pictures:</label>
+                <input type="text" id="clink" name="clink"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>    
+</html>
