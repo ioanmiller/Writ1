@@ -142,23 +142,8 @@ if (isset($_GET['vehicle_id'])) {
                 <label for="vehicleModel">Vehicle Model:</label>
                 <input type="text" id="vehicleModel" name="vehicle_model"><br><br>
                 
-                <label for="vehicleBodytype">Vehicle Bodytype:</label>
-                <input type="text" id="vehicleBodytype" name="vehicle_bodytype"><br><br>
-
-                <label for="fuelType">Fuel Type:</label>
-                <input type="text" id="fuelType" name="fuel_type"><br><br>
-
-                <label for="Mileage">Milage:</label>
-                <input type="text" id="Mileage" name="mileage"><br><br>
-
-                <label for="Location">Location:</label>
-                <input type="text" id="Location" name="location"><br><br>
-
                 <label for="Year">Year of Model:</label>
                 <input type="text" id="Year" name="year"><br><br>
-
-                <label for="numOfDoors">Number of Doors:</label>
-                <input type="text" id="numOfDoors" name="num_doors"><br><br>
 
                 <label for="videoUrl">Links for videos or Pictures:</label>
                 <input type="text" id="videoUrl" name="video_url"><br><br>
