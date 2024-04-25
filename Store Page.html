@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+<link rel="icon" type="D:\WAMPserver\www\Testwebsite\images/Caravanlogo.png" href="logo.png">
+
+
+
+</head>
+<body>
+
+    <div id="header_section" class="col-12">
+        <div id="header_logo" class="col-2">
+            <img id="Caravanlogo_png" src="D:\WAMPserver\www\Testwebsite\images/Caravanlogo.png" alt="Face icon" width="200" height="222">
+</body>
+</html>
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet2" href="StyleSheet2.css">
+    <title>NavBar with drop down menu</title>
+
+</head>
+<body>
+
+
+
+    <ul>
+        <li><a href="">Home</a></li>
+        <li>
+            <a href="">Caravans ↓</a>
+            <ul class="DropDownBarCara">
+                <li><a href="">View Caravans</a></li>
+                <li><a href="">Buy/Rent Caravans</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="">About us ↓</a>
+            <ul class="DropDownBarAbt">
+                <li><a href="">Our history</a></li>
+                <li><a href="">Frequented Questions</a></li>
+            </ul>
+        </li>
+        <li><a href="">Your Account</a></li>
+    </ul>
+
+
+
+</body>
+</html>
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Store</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>Buy and Rent</h1>
+
+
+    <!-- Product 1 -->
+    <div class="product">
+        <h2>Coachman Laser Xcel 850 </h2>
+        <div class="caravan-container">
+            <img src="https://www.raymondjamescaravans.co.uk/wp-content/uploads/2021/08/2022-Laser-Xcel-external.jpg" width="500" height="333">
+        </div>
+        <p>Description:The Coachman Laser Xcel 850 is an impressive 4-berth luxury caravan that comes with just about everything you could need as standard. It offers elegant and comfortable interiors, thoughtful storage systems, and top-of-the-range fixtures and fittings. The caravan is 8ft wide, providing extra space to move about. It features a transverse island bed, twin axles for easier towing, and stylish design elements. .</p>
+        <p>Price: £9999.99</p>
+        <p>Rent : £600</p>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add to Cart Button</title>
+        <style>
+
+            <html lang="en" >
+            <head >
+            <meta charset="UTF-8" >
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+            <title > Add to Cart Popup</title >
+            <style >
+            .button {
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+
+            .popup {
+                display: none;
+                position: fixed;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                background-color: white;
+                padding: 20px;
+                border: 2px solid #4CAF50;
+                border-radius: 5px;
+                z-index: 1000;
+            }
+
+            .overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.5);
+                z-index: 999;
+            }
+        </style>
+        </head>
+        <body>
+
+            <button class="button" id="addToCartButton">Add to Cart</button>
+            <div class="overlay" id="overlay"></div>
+            <div class="popup" id="popup">
+                <p>Do you want to rent or buy?</p>
+                <button class="button">Rent</button>
+                <button class="button">Buy</button>
+                <button class="button" onclick="closePopup()">Close</button>
+            </div>
+
+            <script>
+  document.getElementById('addToCartButton').addEventListener('click', function() {
+    document.getElementById('popup').style.display = 'block';
+    document.getElementById('overlay').style.display = 'block';
+  });
+
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
+  }
+            </script>
+
+        </body>
+        </html>
+
+
+        <!-- Product 2 -->
+        <div class="product">
+            <h2>The Adora Seine</h2>
+            <div class="caravan-container">
+
+
+
+                <img src="https://downtide.com/wp-content/uploads/2023/10/700_adora-gb.png" width="500" height="333">
+            </div>
+            <p>Description: The Adora Seine offers innovative and family-friendly accommodation. Despite its lightweight design, it provides ample space for a family of four.Inside, you’ll find practical, space-efficient layouts. Creature comforts are not compromised, making it ideal for family adventures. The front lounge area features parallel seating that converts into a large double bed. Perfect for relaxing or dining.  At the back, there are two bunks for the kids, ensuring everyone has their own space. The washroom and kitchen are functional, catering to essential needs during your travels.</p>
+            <p>Price: £1299.99</p>
+            <p>Rent : £400</p>
+
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Add to Cart Popup</title>
+                <style>
+                    .button {
+                        padding: 10px 20px;
+                        background-color: #4CAF50;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        font-size: 16px;
+                    }
+
+                    .popup {
+                        display: none;
+                        position: fixed;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        background-color: white;
+                        padding: 20px;
+                        border: 2px solid #4CAF50;
+                        border-radius: 5px;
+                        z-index: 1000;
+                    }
+
+                    .overlay {
+                        display: none;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0,0,0,0.5);
+                        z-index: 999;
+                    }
+                </style>
+            </head>
+            <body>
+
+                <button class="button" id="addToCartButton">Add to Cart</button>
+                <div class="overlay" id="overlay"></div>
+                <div class="popup" id="popup">
+                    <p>Do you want to rent or buy?</p>
+                    <button class="button">Rent</button>
+                    <button class="button">Buy</button>
+                    <button class="button" onclick="closePopup()">Close</button>
+                </div>
+
+                <script>
+  document.getElementById('addToCartButton').addEventListener('click', function() {
+    document.getElementById('popup').style.display = 'block';
+    document.getElementById('overlay').style.display = 'block';
+  });
+
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
+  }
+                </script>
+
+            </body>
+        </html>
+
+
+
+        <!-- Product 3 -->
+        <div class="product">
+            <h2>The Eriba </h2>
+            <img src="https://wgp-cdn.co.uk/OAL/jpg/eriba-touring-642-92630/600/600/" width="500" height="333">
+            <p>Description: The Eriba Feeling has been around for more than a decade and is known for its streamlined design.The pop-top roof significantly reduces frontal area when towing, making it ideal for electric vehicles (EVs). Inside, it offers a flexible layout suitable for couples or active families. Programmable central heating and wireless smartphone charging add to the appeal. Despite its compact footprint, it provides basic floor space and comfort levels. Weighing just 1,300kg, it’s easy to tow with a fuel-efficient car and can be stored in a standard garage.</p>
+            <p>Price: £1499.99</p>
+            <p>Rent : £800</p>
+
+
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Add to Cart Popup</title>
+                <style>
+                    .button {
+                        padding: 10px 20px;
+                        background-color: #4CAF50;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        font-size: 16px;
+                    }
+
+                    .popup {
+                        display: none;
+                        position: fixed;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        background-color: white;
+                        padding: 20px;
+                        border: 2px solid #4CAF50;
+                        border-radius: 5px;
+                        z-index: 1000;
+                    }
+
+                    .overlay {
+                        display: none;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0,0,0,0.5);
+                        z-index: 999;
+                    }
+                </style>
+            </head>
+            <body>
+
+                <button class="button" id="addToCartButton">Add to Cart</button>
+                <div class="overlay" id="overlay"></div>
+                <div class="popup" id="popup">
+                    <p>Do you want to rent or buy?</p>
+                    <button class="button">Rent</button>
+                    <button class="button">Buy</button>
+                    <button class="button" onclick="closePopup()">Close</button>
+                </div>
+
+                <script>
+  document.getElementById('addToCartButton').addEventListener('click', function() {
+    document.getElementById('popup').style.display = 'block';
+    document.getElementById('overlay').style.display = 'block';
+  });
+
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
+  }
+                </script>
+
+            </body>
+        </html>
+
+
+
+        <!-- Product 4 -->
+        <div class="product">
+            <h2>Knaus </h2>
+            <img src="https://www.knaus.com/fileadmin/media/2021-2022/cuv/boxdrive-xl/freisteller/kta-knaus-2021-2022-boxdrive-xl-freisteller.png" width="500" height="333">
+            <p>Description: Knaus is renowned for its excellence in design and build quality.The Südwind 580 sports a unique layout.This compact seven-berth caravan features a central dinette, a fixed front double bed, and a triple bunk at the back. Wonderful L-shaped lounge at the front end alongside a long, fixed cabinet on the nearside. Huge washroom and dressing area beyond the kitchen, making the most of the 8ft-wide space. Dedicated toilet and washbasin area on the offside and a separate shower.</p>
+            <p>Price: £1799.99</p>
+            <p>Rent : £1000</p>
+        </div>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Add to Cart Popup</title>
+            <style>
+                .button {
+                    padding: 10px 20px;
+                    background-color: #4CAF50;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 16px;
+                }
+
+                .popup {
+                    display: none;
+                    position: fixed;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: white;
+                    padding: 20px;
+                    border: 2px solid #4CAF50;
+                    border-radius: 5px;
+                    z-index: 1000;
+                }
+
+                .overlay {
+                    display: none;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0,0,0,0.5);
+                    z-index: 999;
+                }
+            </style>
+        </head>
+        <body>
+
+            <button class="button" id="addToCartButton">Add to Cart</button>
+            <div class="overlay" id="overlay"></div>
+            <div class="popup" id="popup">
+                <p>Do you want to rent or buy?</p>
+                <button class="button">Rent</button>
+                <button class="button">Buy</button>
+                <button class="button" onclick="closePopup()">Close</button>
+            </div>
+
+            <script>
+  document.getElementById('addToCartButton').addEventListener('click', function() {
+    document.getElementById('popup').style.display = 'block';
+    document.getElementById('overlay').style.display = 'block';
+  });
+
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
+  }
+            </script>
+
+        </body>
+    </html>
