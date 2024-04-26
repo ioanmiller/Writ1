@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', monospace;
+}
+
+ul {
+  list-style: none;
+  background: #181A18;
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+}
+
+ul li a {
+  display: block;
+  padding: 25px 30px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+}
+
+ul li ul.DropDownBarCara li {
+  display: block;
+}
+
+ul li ul.DropDownBarAbt {
+  display: block;
+}
+
+ul li ul.DropDownBarCara {
+  width: 100%;
+  background: #181A18;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li ul.DropDownBarAbt {
+  width: 100%;
+  background: #181A18;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li a:hover {
+  background: #474847;
+}
+
+ul li:hover ul.DropDownBarCara {
+  display: block;
+}
+
+ul li:hover ul.DropDownBarAbt {
+  display: block;
+}
+
+
+
+
+
+
+
