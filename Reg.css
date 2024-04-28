@@ -1,0 +1,38 @@
+body {
+    font-family: 'Open Sans', Monospace;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Registration {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #000000;
+}
+
+.RegForm {
+    margin-bottom: 15px;
+}
+
+.RegForm input[type="text"],
+.RegForm input[type="email"],
+.RegForm input[type="password"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    border: 1px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.RegForm input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0067b0;
+    cursor: pointer;
+}
